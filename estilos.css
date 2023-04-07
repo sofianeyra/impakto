@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}  
+a {
+    text-decoration: none;
+}
+/*  Menú */
+header {
+	background:#712587;
+    position: fixed;
+    width:100%;
+    top:0px;
+    z-index: 1;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+header img {
+	width:10%;
+    padding:10px;
+	padding-left:3%;
+}     
+header ul {
+    text-align: right;
+    list-style: none;
+    padding-right: 3%;
+}   
+header li {
+    text-align: center;
+    display:inline-block;
+    width:150px;
+    margin:0px auto;
+    color: #FBFBFB;  
+}
+.morado {
+    color: #712587;
+}
+
+/* Seccion 1 */
+.seccion-1 {
+    margin-top: 74px;
+    display: flex;
+    position: relative;
+}
+.seccion-1 .texto,
+.seccion-1 .video {
+    flex: 1;
+}
+.seccion-1 .video img {
+    width: 100%;
+    padding: 0;
+}
+.seccion-1 .texto {
+    margin: auto;
+}
+.seccion-1 h1,
+.seccion-1 p,
+.seccion-1 .contacto-boton {
+    margin: 30px 5%;
+}
+.seccion-1 .texto h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.seccion-1 .texto p {
+    font-size: 20px;
+}
+.seccion-1 .contacto-boton {
+    width: 150px;
+    background-color: #712587;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.video-boton {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: #FAB724;
+    border: none;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.contacto-boton:hover {
+    background-color: #FAB724;
+    color: black;
+}
+/* Seccion 2 */
+.seccion-2 {
+    margin-top: -3px;
+    background-color: #FAB724;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0px;
+}
+.seccion-2  h2,
+.seccion-3  h2 {
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.servicios p {
+    display: none;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    bottom: 0px;
+    width: 100%;
+}
+.servicio-1,
+.servicio-2,
+.servicio-3 {
+    position: relative;
+    width: 325px;
+    height: 195px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.servicio-1 {
+    background: url(imagenes/servicio-1.png);
+}
+.servicio-2 {
+    background: url(imagenes/servicio-2.png);
+}
+.servicio-3 {
+    background: url(imagenes/servicio-3.png);
+}
+.servicio-1:hover p {
+    display: block;
+}
+.servicio-2:hover p {
+    display: block;
+}
+.servicio-3:hover p {
+    display: block;
+}
+.servicios {
+    display: flex;
+    justify-content: space-around;
+}
+.servicio-1:hover {
+    background: linear-gradient(to bottom, rgba(114,37,135,0.23) 0%, rgba(114,37,135,1) 100%), url(imagenes/servicio-1.png);
+}
+.servicio-2:hover {
+    background: linear-gradient(to bottom, rgba(114,37,135,0.23) 0%, rgba(114,37,135,1) 100%), url(imagenes/servicio-2.png);
+}
+.servicio-3:hover {
+    background: linear-gradient(to bottom, rgba(114,37,135,0.23) 0%, rgba(114,37,135,1) 100%), url(imagenes/servicio-3.png);
+}
+
+/* Seccion 3 */
+.seccion-3 {
+    position: relative;
+    padding: 70px 0px;
+    text-align: center;
+}
+.slider {
+    height: 200px;
+    max-width: 85%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.botones {
+    padding: 0 2.5%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+}
+.botones button {
+    background: none;
+    border: none;
+}
+.slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+}
+.marca {
+    min-width: 200px;
+    height: 100%;
+    margin: 0px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.idat {
+    background-image: url(imagenes/logo-idat.png);
+}
+.intercorp {
+    background-image: url(imagenes/logo-intercorp.png);
+}
+.rimac {
+    background-image: url(imagenes/logo-rimac.png);
+}
+.isil {
+    background-image: url(imagenes/logo-isil.png);
+}
+.renzo {
+    background-image: url(imagenes/logo-renzo.png);
+}
+.alicorp {
+    background-image: url(imagenes/logo-alicorp.png);
+}
+.auna {
+    background-image: url(imagenes/logo-auna.png);
+}
+.idat:hover {
+    background-image: url(imagenes/logo-idat-color.webp);
+}
+.intercorp:hover {
+    background-image: url(imagenes/logo-intercorp-color.png);
+}
+.rimac:hover {
+    background-image: url(imagenes/logo-rimac-color.png);
+}
+.isil:hover {
+    background-image: url(imagenes/logo-isil-color.png);
+}
+.renzo:hover {
+    background-image: url(imagenes/logo-renzo-color.png);
+}
+.alicorp:hover {
+    background-image: url(imagenes/logo-alicorp-color.png);
+}
+.auna:hover {
+    background-image: url(imagenes/logo-auna-color.png);
+}
+/* Footer */   
+footer, body {
+    margin: 0;
+    padding: 0;
+}  
+.main-footer {
+    background-color: #712587;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}   
+.main-footer ul {
+    padding: 0;
+}
+.main-footer li {
+    list-style: none;
+}
+.main-footer a {
+    color: white;
+    line-height: 22px;
+}
+.logo-footer img,
+.logo-reclamaciones img {
+    width: 130px;
+}
+.redes-footer, .contacto-footer {
+    height: 150px;
+}
+.black-footer {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: left;
+    background-color: black;
+    font-size: 13px;
+    color: white;
+}  
+.redes-footer a {
+    display: block;
+    font-size: 24px;
+}
+.redes-footer ul {
+    display: flex;
+    gap: 14px;
+}
+/* Estilos mobile */
+@media (max-width: 600px) {
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .redes-footer, .contacto-footer {
+        height: 130px;
+    }
+    .black-footer {
+        justify-content: center;
+    }
+}

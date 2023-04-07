@@ -4,10 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>IMPAKTO</title>
+    <link rel="icon" href="imagenes/impakto1-02.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <img src="imagenes/1111-02-02-02.png">
+        <ul>
+            <a href="/"><li>Inicio</li></a>
+            <a href="/paginas/nosotros.html"><li>Nosotros</li></a>
+            <a href="/paginas/servicios.html"><li>Servicios</li></a>
+            <a href="/paginas/contactanos.html"><li>Contáctanos</li></a>
+        </ul>
+    </header>
+
+    
+    <section class="seccion-1">
+        <div class="texto">
+            <h1>Diseñamos el<br> 
+                <span class="morado">futuro</span><br>
+                pensando en <br>
+                <span class="morado">digital</span></h1>
+            
+            <p>Ayudamos a pequeñas y grandes empresas a mejorar su experiencia digital</p>
+            <button class="contacto-boton">CONTÁCTANOS</button>
+        </div>
+        <div class="video">
+            <img src="imagenes/img-principal.png">
+        </div>
+        <button class="video-boton">
+            <img src="imagenes/play-boton.png">
+        </button>
+    </section>
+    <section class="seccion-2">
+        <h2>Nuestros <span class="morado">servicios</span></h2>
+        <div id="servicios" class="servicios">
+            <div class="servicio-1">
+                <p>DISEÑO WEB</p>
+            </div>
+            <div class="servicio-2">
+                <p>ILUSTRACIÓN</p>
+            </div>
+            <div class="servicio-3">
+                <p>DISEÑO PUBLICITARIO</p>
+            </div>
+        </div>
+    </section>
+    <section class="seccion-3">
+        <h2><span class="morado">Clientes</span> a los cuales, hoy llamamos <span class="morado">amigos</span></h2>
+        <div class="slider">
+            <ul data-target="carrusel">
+              <li class="marca idat" data-target="marca"></li>
+              <li class="marca intercorp" data-target="marca"></li>
+              <li class="marca isil" data-target="marca"></li>
+              <li class="marca rimac" data-target="marca"></li>
+              <li class="marca renzo" data-target="marca"></li>
+              <li class="marca alicorp" data-target="marca"></li>
+              <li class="marca auna" data-target="marca"></li>
+              <li class="marca idat" data-target="marca"></li>
+              <li class="marca intercorp" data-target="marca"></li>
+              <li class="marca isil" data-target="marca"></li>
+              <li class="marca rimac" data-target="marca"></li>
+            </ul>
+            
+          </div>
+          <div class="botones">
+            <button data-action="slideLeft"><img src="imagenes/boton-izq.png"></button>
+            <button data-action="slideRight"><img src="imagenes/boton-der.png"></button>
+          </div>
+    </section>
+    <footer>
+        <div class="main-footer">
+            <div class="logo-footer">
+                <img src="imagenes/1111-02-02-02.png">
+            </div>
+            <div class="contacto-footer">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li>
+                        <a href="tel:+51999888777">+51 999 888 777</a>
+                    </li>
+                    <li>
+                        <a href="tel:+51999888777">+51 999 888 777</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contacto@impakto.pe">contacto@impakto.pe</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes-footer">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank"> 
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://youtube.com/" target="_blank">
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo-reclamaciones">
+                <img src="imagenes/libro-reclamaciones.png">
+            </div>
+        </div>
+        <div class="black-footer">
+            <p>© 2023 Impakto. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="funciones.js"></script>
 </body>
 </html>

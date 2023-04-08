@@ -1,3 +1,66 @@
+/*Página de nosotros*/
+.contenedor-imagen {
+    width: 100%;
+    height: 719px;
+    background-image: url(/imagenes/nosotros.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.texto-contenido {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.contenedor-imagen h1,
+.titulo-seccion {
+    font-size: 48px;
+}
+.contenedor-imagen p {
+    font-size: 20px;
+}
+.titulo-seccion {
+    margin-bottom: 8px;
+}
+.titulo-seccion.amarillo,
+.item.morado p {
+    text-align: left;
+    margin-left: 30px;
+}
+.titulo-seccion.morado,
+.item.amarillo p {
+    text-align: right;
+    margin-right: 30px;
+}
+.item.amarillo, .item.morado {
+    width: 100%;
+    height: 300px;
+}
+.item.amarillo {
+    background-color: #FAB724;
+    text-align: right;
+    justify-content: end;
+}
+.item.morado {
+    background-color: #712587;
+    text-align: left;
+    justify-content: start;
+}
+.item {
+    color: white !important;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+.item p {
+    width: 45%;
+}
+
 /* Formulario */
 .seccion-contacto {
     width: 100%;
@@ -73,8 +136,27 @@ input, textarea {
     border: 1px solid black;
     background-color: transparent;
 }
-
+/* Estilos mobile */
 @media (max-width: 600px) {
+    .texto-contenido {
+        width: 90%;
+        line-height: normal;
+    }
+    .titulo-seccion {
+        font-size: 30px;
+    }
+    .titulo-seccion.amarillo {
+        margin-left: 10px;
+    }
+    .titulo-seccion.morado {
+        margin-right: 10px;
+    }
+    .item.amarillo, .item.morado {
+        height: 250px;
+    }
+    .item.amarillo p, .item.morado p {
+        font-size: 20px;
+    }
     .seccion-contacto {
         background-image: none;
         background-color: #FAB724;

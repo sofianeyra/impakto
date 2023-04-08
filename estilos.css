@@ -5,6 +5,31 @@
 a {
     text-decoration: none;
 }
+.morado {
+    color: #712587;
+}
+.amarillo {
+    color: #FAB724;
+}
+/* Modal */
+#modalFondo {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    background: rgb(0 0 0 / 65%);
+    height: 100vh;
+    z-index: 2;
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    height: 100%;
+}
+#modalFondo:visited {
+    display: none;
+}
+
 /*  Menú */
 header {
 	background:#712587;
@@ -34,10 +59,6 @@ header li {
     margin:0px auto;
     color: #FBFBFB;  
 }
-.morado {
-    color: #712587;
-}
-
 /* Seccion 1 */
 .seccion-1 {
     margin-top: 74px;
@@ -67,7 +88,8 @@ header li {
 .seccion-1 .texto p {
     font-size: 20px;
 }
-.seccion-1 .contacto-boton {
+.seccion-1 .contacto-boton,
+.formulario-boton {
     width: 150px;
     background-color: #712587;
     border: none;
@@ -89,7 +111,8 @@ header li {
     bottom: 0;
     right: 0;
 }
-.contacto-boton:hover {
+.contacto-boton:hover,
+.formulario-boton:hover {
     background-color: #FAB724;
     color: black;
 }
@@ -293,6 +316,7 @@ footer, body {
 /* Estilos mobile */
 @media (max-width: 600px) {
     .main-footer {
+        padding: 30px 0px;
         flex-direction: column;
         text-align: center;
     }

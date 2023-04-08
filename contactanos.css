@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}  
+a {
+    text-decoration: none;
+}
+/*  Menú */
+header {
+	background:#712587;
+    position: fixed;
+    width:100%;
+    top:0px;
+    z-index: 3;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+header img {
+	width:10%;
+    padding:10px;
+	padding-left:3%;
+}     
+header ul {
+    text-align: right;
+    list-style: none;
+    padding-right: 3%;
+}   
+header li {
+    text-align: center;
+    display:inline-block;
+    width:150px;
+    margin:0px auto;
+    color: #FBFBFB;  
+}
+.morado {
+    color: #712587;
+}
+
+/*formulario */
+
+main{
+   
+    margin: 0 auto;    
+    
+    background-color: #FAB724; /* Establece el color de fondo */
+    padding: 20px; /* Agrega un poco de espacio alrededor del texto */
+    width: 50%; /* Establece el ancho del texto */
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: right;
+
+    display: block;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #5d1970;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: #541764;
+    transform: scale(1.2);
+}
+
+
+/* Footer */   
+footer, body {
+    margin: 0;
+    padding: 0;
+}  
+.main-footer {
+    background-color: #712587;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}   
+.main-footer ul {
+    padding: 0;
+}
+.main-footer li {
+    list-style: none;
+}
+.main-footer a {
+    color: white;
+    line-height: 22px;
+}
+.logo-footer img,
+.logo-reclamaciones img {
+    width: 130px;
+}
+.redes-footer, .contacto-footer {
+    height: 150px;
+}
+.black-footer {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: left;
+    background-color: black;
+    font-size: 13px;
+    color: white;
+}  
+.redes-footer a {
+    display: block;
+    font-size: 24px;
+}
+.redes-footer ul {
+    display: flex;
+    gap: 14px;
+}

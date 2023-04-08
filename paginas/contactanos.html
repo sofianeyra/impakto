@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos.css"> 
+    <link rel="stylesheet" href="paginas.css"> 
     <title>IMPAKTO</title>
     <link rel="icon" href="/imagenes/impakto1-02.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,5 +20,32 @@
             <a href="/paginas/contactanos.html"><li>Contáctanos</li></a>
         </ul>
     </header>
+    <section class="seccion-contacto">
+        <div class="formulario">
+            <h1>Cuéntanos tu <span class="morado">idea</span></h1>
+            <form>
+                <div class="opciones">
+                    <label><input type="checkbox" class="checkbox-round" /> Tengo una empresa</label>
+                    <label><input type="checkbox" class="checkbox-round" /> Tengo un proyecto</label>
+                </div>
+                <label for="fname">Su nombre es:</label>
+                <input type="text" name="nombre" value="">
+                <div class="campos">
+                    <div>
+                        <label for="lname">Su correo eléctronico:</label>
+                        <input type="email" name="correo" value="">
+                    </div>
+                    <div>
+                        <label for="fname">Su teléfono es:</label>
+                        <input type="tel" name="telefono" value="">
+                    </div>
+                </div>
+                <label for="fname">Su comentario:</label>
+                <textarea name="comentario"></textarea>
+                <label><input type="checkbox" class="checkbox-round" /> Acepto las <span class="negrita">políticas de privacidad</span></label>
+                <button class="formulario-boton" type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,3 +1,27 @@
+// Funcionalidad de modal
+let div = document.getElementById('modalFondo');
+let boton = document.getElementById('boton');
+let botonEstilo = getComputedStyle(div);
+
+function showHide(e){
+  e.preventDefault();
+  e.stopPropagation();
+  if(botonEstilo.display == "none"){
+    div.style.display = "block";
+  } else if (div.style.display == "block"){
+    div.style.display = "none";
+  }
+}
+
+boton.addEventListener("click", showHide, false);
+
+document.addEventListener("click", function(e){
+  let clic = e.target;
+  if(div.style.display == "block" && clic != div){
+    div.style.display = "none";
+  }
+}, false);
+
 // Funcionalidad de slider
 const carrusel = document.querySelector("[data-target='carrusel']");
 const card = carrusel.querySelector("[data-target='marca']");

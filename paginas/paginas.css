@@ -1,0 +1,88 @@
+/* Formulario */
+.seccion-contacto {
+    width: 100%;
+    height: calc(100vh - 74px);
+    margin-top: 74px;
+    background-image: url(/imagenes/contacto-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+}
+.formulario {
+    width: 50%;
+}
+.formulario h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.negrita {
+    font-weight: bold;
+}
+form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+input, textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.opciones {
+    display: flex;
+    gap: 40px;
+}
+.checkbox-round {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.checkbox-round:checked {
+    background-color: #712587;
+}
+.campos {
+    gap: 20px;
+}
+.campos,
+.campos div {
+    display: flex;
+    gap: 40px;
+}
+.campos div {
+    width: 50%;
+    flex-direction: column;
+}
+.formulario-boton {
+    margin: auto;
+    margin-top: 20px !important;
+}
+.formulario-boton:hover {
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+    .seccion-contacto {
+        background-image: none;
+        background-color: #FAB724;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .campos, .opciones {
+        gap: 8px;
+    }
+}

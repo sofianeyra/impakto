@@ -86,7 +86,8 @@ header li {
 .seccion-1 .texto p {
     font-size: 20px;
 }
-.seccion-1 .contacto-boton {
+.seccion-1 .contacto-boton,
+.formulario-boton {
     width: 150px;
     background-color: #712587;
     border: none;
@@ -108,7 +109,8 @@ header li {
     bottom: 0;
     right: 0;
 }
-.contacto-boton:hover {
+.contacto-boton:hover,
+.formulario-boton:hover {
     background-color: #FAB724;
     color: black;
 }
